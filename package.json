@@ -1,6 +1,6 @@
 {
 	"name": "dayjs-parser",
-	"version": "0.9.0",
+	"version": "0.9.1",
 	"description": "Date parsing plugin for dayjs",
 	"tags": [
 		"dayjs",
@@ -32,14 +32,14 @@
 	},
 	"homepage": "https://github.com/kensnyder/dayjs-parser#readme",
 	"dependencies": {
-		"any-date-parser": "^1.5.1"
+		"any-date-parser": "1.5.1"
 	},
 	"peerDependencies": {
 		"dayjs": "1.10.4"
 	},
 	"devDependencies": {
-		"eslint": "^8.7.0",
-		"jest": "^27.4.7",
-		"prettier": "^2.5.1"
+		"eslint": "8.7.0",
+		"jest": "27.4.7",
+		"prettier": "2.5.1"
 	}
 }

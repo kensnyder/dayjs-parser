@@ -13,6 +13,7 @@ then
   echo "${GREEN}Attempting to globally install full-icu with npm for i18n unit tests...${WHITE}"
   echo "npm install -g full-icu"
   npm install -g full-icu
+  echo ""
 fi
 
 if [ -d "$fullIcuPath" ]
@@ -28,9 +29,11 @@ then
     echo "${GREEN}Attempting to globally install dayjs with npm for unit tests...${WHITE}"
     echo "npm install -g dayjs@1"
     npm install -g dayjs@1
+    echo ""
   fi
   # make global dayjs available to our specs
   export NODE_PATH=$modulesPath
+  echo "${GREEN}Testing code that connects dayjs to any-date-parser...${WHITE}"
   # set timezone to UTC and run tests
   TZ=UTC npx jest "$@"
 else

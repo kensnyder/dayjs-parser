@@ -1,13 +1,16 @@
 # dayjs-parser
 
-[![NPM Link](https://img.shields.io/npm/v/dayjs-parser?v=1.0.0)](https://npm.com/package/dayjs-parser)
-[![Build Status](https://travis-ci.org/kensnyder/dayjs-parser.svg?branch=master&v=1.0.0)](https://travis-ci.org/kensnyder/dayjs-parser)
-[![Code Coverage](https://codecov.io/gh/kensnyder/dayjs-parser/branch/master/graph/badge.svg?v=1.0.0)](https://codecov.io/gh/kensnyder/dayjs-parser)
-[![ISC License](https://img.shields.io/npm/l/dayjs-parser.svg?v=1.0.0)](https://opensource.org/licenses/ISC)
+[![NPM Link](https://img.shields.io/npm/v/dayjs-parser?v=0.9.0)](https://npmjs.com/package/dayjs-parser)
+[![Build Status](https://ci.appveyor.com/api/projects/status/github/kensnyder/dayjs-parser?branch=master&svg=true&v=0.9.0)](https://ci.appveyor.com/project/kensnyder/dayjs-parser/branch/master)
+[![Code Coverage](https://codecov.io/gh/kensnyder/dayjs-parser/branch/master/graph/badge.svg?v=0.9.0)](https://codecov.io/gh/kensnyder/dayjs-parser)
+[![ISC License](https://img.shields.io/npm/l/dayjs-parser.svg?v=0.9.0)](https://opensource.org/licenses/ISC)
 
 A comprehensive and extensible date parsing plugin for
 [dayjs](https://day.js.org). It allows passing a wide variety of date formats to
 `dayjs()`. Most locales are supported automatically.
+
+It uses [any-date-parser](https://npm.com/package/any-date-parser) for parsing
+date strings.
 
 ## Table of Contents
 
@@ -37,15 +40,27 @@ npm install dayjs-parser
 
 ## Usage
 
+OPTION 1: Use a single import
+
+```js
+const dayjs = require('dayjs-parser/dayjs');
+
+const date1 = dayjs('March 5th, 2016 at 7:05pm');
+const date2 = dayjs('9 days ago');
+const date3 = dayjs('2016-03-05 23:59:59 CST');
+```
+
+OPTION 2: Register as a regular dayjs plugin
+
 ```js
 const dayjs = require('dayjs');
 const parserPlugin = require('dayjs-parser');
 
 dayjs.extend(parserPlugin);
 
-const date1 = dayjs('March 5th, 2016 at 7:05pm');
-const date2 = dayjs('9 days ago');
-const date3 = dayjs('2016-03-05 23:59:59 CST');
+const date1 = dayjs('Wed Jan 19 2022 17:52:46');
+const date2 = dayjs('in 2 weeks');
+const date3 = dayjs('2016-03-05T23:59:59.000Z');
 ```
 
 ## Recognized Formats
@@ -96,8 +111,8 @@ parser.addFormat(
 Locales are supported by first setting the global locale:
 
 ```js
-const dayjs = require('dayjs');
-
+const parserPlugin = require('dayjs-parser');
+dayjs.extend(parserPlugin);
 dayjs.locale('fr');
 
 const date = dayjs('15 septembre 2015');

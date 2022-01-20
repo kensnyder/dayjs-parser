@@ -46,6 +46,21 @@ describe('y-m-d parser', () => {
 	});
 });
 
+describe('toJSON format', () => {
+	it('should handle "2016-03-05T23:59:59.000Z"', () => {
+		const actual = dayjs('2016-03-05T23:59:59.000Z');
+		const expected = dayjs({
+			year: 2016,
+			month: 2,
+			day: 5,
+			hour: 23,
+			minute: 59,
+			second: 59,
+		});
+		expect(actual.format()).toEqual(expected.format());
+	});
+});
+
 describe('i18n parsing', () => {
 	it('should handle French', () => {
 		dayjs.locale('fr');

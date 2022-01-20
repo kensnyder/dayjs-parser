@@ -35,7 +35,7 @@ date strings.
 ## Installation
 
 ```bash
-npm install dayjs-parser
+npm install dayjs dayjs-parser
 ```
 
 ## Usage

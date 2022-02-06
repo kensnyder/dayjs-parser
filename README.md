@@ -1,9 +1,9 @@
 # dayjs-parser
 
-[![NPM Link](https://img.shields.io/npm/v/dayjs-parser?v=0.9.2)](https://npmjs.com/package/dayjs-parser)
-[![Build Status](https://ci.appveyor.com/api/projects/status/github/kensnyder/dayjs-parser?branch=master&svg=true&v=0.9.2)](https://ci.appveyor.com/project/kensnyder/dayjs-parser/branch/master)
-[![Code Coverage](https://codecov.io/gh/kensnyder/dayjs-parser/branch/master/graph/badge.svg?v=0.9.2)](https://codecov.io/gh/kensnyder/dayjs-parser)
-[![ISC License](https://img.shields.io/npm/l/dayjs-parser.svg?v=0.9.2)](https://opensource.org/licenses/ISC)
+[![NPM Link](https://img.shields.io/npm/v/dayjs-parser?v=0.9.3)](https://npmjs.com/package/dayjs-parser)
+[![Build Status](https://ci.appveyor.com/api/projects/status/github/kensnyder/dayjs-parser?branch=master&svg=true&v=0.9.3)](https://ci.appveyor.com/project/kensnyder/dayjs-parser/branch/master)
+[![Code Coverage](https://codecov.io/gh/kensnyder/dayjs-parser/branch/master/graph/badge.svg?v=0.9.3)](https://codecov.io/gh/kensnyder/dayjs-parser)
+[![ISC License](https://img.shields.io/npm/l/dayjs-parser.svg?v=0.9.3)](https://opensource.org/licenses/ISC)
 
 A comprehensive and extensible date parsing plugin for
 [dayjs](https://day.js.org). It allows passing a wide variety of date formats to

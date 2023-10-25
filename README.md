@@ -80,14 +80,14 @@ const date3 = dayjs('2016-03-05T23:59:59.000Z');
 - Twitter
 
 `dayjs-parser` relies on
-[any-date-format](https://www.npmjs.com/package/any-date-parser) which supports
+[any-date-parser](https://www.npmjs.com/package/any-date-parser) which supports
 even more formats. See the
 [exhaustive list](https://www.npmjs.com/package/any-date-parser#exhaustive-list-of-date-formats).
 
 ## Adding Custom Formats
 
 See
-[any-date-format's instructions](https://www.npmjs.com/package/any-date-parser#adding-custom-formats).
+[any-date-parser's instructions](https://www.npmjs.com/package/any-date-parser#adding-custom-formats).
 
 Example:
 
@@ -123,7 +123,7 @@ See the [Dayjs docs on locales](https://day.js.org/docs/en/i18n/i18n)
 ## Sister Packages
 
 - Standalone Parser:
-  [any-date-format](http://npmjs.com/packages/any-date-format)
+  [any-date-parser](http://npmjs.com/packages/any-date-parser)
 - Luxon: [luxon-parser](http://npmjs.com/package/luxon-parser)
 - Moment: [moment-parseplus](http://npmjs.com/package/moment-parseplus)
 

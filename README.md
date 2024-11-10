@@ -1,19 +1,20 @@
 # dayjs-parser
 
-
-[![NPM Link](https://img.shields.io/npm/v/dayjs-parser?v=1.0.0-rc.1)](https://npmjs.com/package/dayjs-parser)
+[![NPM Link](https://img.shields.io/npm/v/dayjs-parser?v=1.0.0)](https://npmjs.com/package/dayjs-parser)
 [![Build Status](https://github.com/kensnyder/dayjs-parser/actions/workflows/workflow.yml/badge.svg?v=2.0.0-rc.1)](https://github.com/kensnyder/dayjs-parser/actions)
 [![Code Coverage](https://codecov.io/gh/kensnyder/dayjs-parser/branch/main/graph/badge.svg?v=2.0.0-rc.1)](https://codecov.io/gh/kensnyder/dayjs-parser)
-[![Language: TypeScript](https://badgen.net/static/language/TS?v=1.0.0-rc.1)](https://github.com/search?q=repo:kensnyder/dayjs-parser++language:TypeScript&type=code)
-![Tree shakeable](https://badgen.net/static/tree%20shakeable/yes/green?v=1.0.0-rc.1)
-[![ISC License](https://badgen.net/github/license/kensnyder/dayjs-parser?v=1.0.0-rc.1)](https://opensource.org/licenses/ISC)
+[![Language: TypeScript](https://badgen.net/static/language/TS?v=1.0.0)](https://github.com/search?q=repo:kensnyder/dayjs-parser++language:TypeScript&type=code)
+![Tree shakeable](https://badgen.net/static/tree%20shakeable/yes/green?v=1.0.0)
+[![ISC License](https://badgen.net/github/license/kensnyder/dayjs-parser?v=1.0.0)](https://opensource.org/licenses/ISC)
 
-A comprehensive and extensible date parsing plugin for
-[dayjs](https://day.js.org). It allows passing a wide variety of date formats to
-`dayjs()`. Most locales are supported automatically.
+The most comprehensive and accurate date parser for Node and browsers. It uses
+`Intl` to provide parsing support for all installed locales. This plugin 
+connects the capabilities of 
+[any-date-parser](https://npmjs.com/package/dany-date-parser) to
+[dayjs](https://day.js.org).
 
-It uses [dayjs-parser](https://npmjs.com/package/dayjs-parser) for parsing
-date strings.
+It allows passing every imaginable date format to the `dayjs()` function. Most 
+locales are supported automatically.
 
 ## Table of Contents
 
@@ -26,6 +27,8 @@ date strings.
 - [Sister Packages](#sister-packages)
 - [Unit Testing](#unit-testing)
 - [Contributing](#contributing)
+- [ISC License](./LICENSE.md)
+- [Changelog](./CHANGELOG.md)
 
 ## Motivation
 

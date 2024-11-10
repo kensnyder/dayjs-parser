@@ -1,6 +1,6 @@
 {
   "name": "dayjs-parser",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Date parsing plugin for dayjs",
   "keywords": [
     "dayjs",
@@ -28,6 +28,7 @@
     "README.md",
     "LICENSE.md"
   ],
+  "sideEffects": false,
   "scripts": {
     "test": "./scripts/test.sh run",
     "test-watch": "./scripts/test.sh",

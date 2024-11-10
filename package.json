@@ -1,45 +1,72 @@
 {
-	"name": "dayjs-parser",
-	"version": "0.9.3",
-	"description": "Date parsing plugin for dayjs",
-	"keywords": [
-		"dayjs",
-		"date",
-		"datetime",
-		"parse",
-		"parser",
-		"date parser",
-		"parse date",
-		"human"
-	],
-	"main": "index.js",
-	"scripts": {
-		"test": "sh ./test/run-jest.sh",
-		"watch": "sh ./test/run-jest.sh --watch",
-		"coverage": "sh ./test/run-jest.sh --coverage"
-	},
-	"repository": {
-		"type": "git",
-		"url": "git+https://github.com/kensnyder/dayjs-parser.git"
-	},
-	"author": {
-		"name": "Ken Snyder",
-		"email": "kendsnyder@gmail.com"
-	},
-	"license": "ISC",
-	"bugs": {
-		"url": "https://github.com/kensnyder/dayjs-parser/issues"
-	},
-	"homepage": "https://github.com/kensnyder/dayjs-parser#readme",
-	"dependencies": {
-		"any-date-parser": "1.5.2"
-	},
-	"peerDependencies": {
-		"dayjs": "1.10.4"
-	},
-	"devDependencies": {
-		"eslint": "8.8.0",
-		"jest": "27.5.0",
-		"prettier": "2.5.1"
-	}
+  "name": "dayjs-parser",
+  "version": "1.0.0-rc.1",
+  "description": "Date parsing plugin for dayjs",
+  "keywords": [
+    "dayjs",
+    "date",
+    "datetime",
+    "parse",
+    "parser",
+    "date parser",
+    "parse date",
+    "human"
+  ],
+  "type": "module",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "require": "./dist/index.cjs",
+      "import": "./dist/index.mjs",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE.md"
+  ],
+  "scripts": {
+    "test": "./scripts/test.sh run",
+    "test-watch": "./scripts/test.sh",
+    "build": "npm run build:clean && npm run build:dts && npm run build:esm && npm run build:cjs",
+    "build:clean": "rimraf dist/ && mkdir dist",
+    "build:dts": "yes | npx dts-bundle-generator -o dist/index.d.ts src/plugin.ts",
+    "build:esm": "yes | npx esbuild src/plugin.ts --bundle --external:any-date-parser --platform=node --format=esm --outfile=dist/index.mjs",
+    "build:cjs": "yes | npx esbuild src/plugin.ts --bundle --external:any-date-parser --platform=node --format=cjs --outfile=dist/index.cjs",
+    "coverage": "./scripts/test.sh run --coverage",
+    "view-coverage": "open ./coverage/lcov-report/index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kensnyder/dayjs-parser.git"
+  },
+  "author": {
+    "name": "Ken Snyder",
+    "email": "kendsnyder@gmail.com"
+  },
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kensnyder/dayjs-parser/issues"
+  },
+  "homepage": "https://github.com/kensnyder/dayjs-parser#readme",
+  "dependencies": {
+    "any-date-parser": "2.0.0-rc.1"
+  },
+  "peerDependencies": {
+    "dayjs": "1.11.13"
+  },
+  "devDependencies": {
+    "@types/node": "22.5.5",
+    "@vitest/coverage-v8": "2.1.1",
+    "eslint": "8.16.0",
+    "luxon": "3.5.0",
+    "prettier": "3.3.3",
+    "prettier-plugin-organize-imports": "4.0.0",
+    "rimraf": "6.0.1",
+    "typescript": "5.6.2",
+    "vitest": "2.1.1"
+  }
 }

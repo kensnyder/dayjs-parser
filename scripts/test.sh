@@ -13,7 +13,6 @@ then
   echo "${GREEN}Attempting to globally install full-icu with npm for i18n unit tests...${WHITE}"
   echo "npm install -g full-icu"
   npm install -g full-icu
-  echo ""
 fi
 
 if [ -d "$fullIcuPath" ]
@@ -23,19 +22,18 @@ fi
 
 if [ -n "$NODE_ICU_DATA" ]
 then
-  # make sure dayjs is available
-  if ! npm list -g | grep -q 'dayjs'
+  # make sure luxon is available
+  if ! npm list -g | grep -q 'luxon'
   then
-    echo "${GREEN}Attempting to globally install dayjs with npm for unit tests...${WHITE}"
-    echo "npm install -g dayjs@1"
-    npm install -g dayjs@1
-    echo ""
+    echo "${GREEN}Attempting to globally install luxon with npm for unit tests...${WHITE}"
+    echo "npm install -g luxon@3"
+    npm install -g luxon@3
   fi
-  # make global dayjs available to our specs
+  # make global luxon available to our specs
   export NODE_PATH=$modulesPath
-  echo "${GREEN}Testing code that connects dayjs to any-date-parser...${WHITE}"
   # set timezone to UTC and run tests
-  TZ=UTC npx jest "$@"
+  export TZ=UTC
+  npx vitest "$@"
 else
   # Failed
   echo "${RED}We failed to find the full-icu package path."

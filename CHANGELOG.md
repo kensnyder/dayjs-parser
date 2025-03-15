@@ -1,5 +1,10 @@
 ## Change Log
 
+### v1.0.2 on 2025-03-15
+
+- Updated dependencies
+- Fixed CJS default export
+
 ### v1.0.1 on 2024-11-10
 
 - Fixed bad link in README.md

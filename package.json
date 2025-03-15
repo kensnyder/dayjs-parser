@@ -36,7 +36,7 @@
     "build:clean": "rimraf dist/ && mkdir dist",
     "build:dts": "yes | npx dts-bundle-generator -o dist/index.d.ts src/plugin.ts",
     "build:esm": "yes | npx esbuild src/plugin.ts --bundle --external:any-date-parser --platform=node --format=esm --outfile=dist/index.mjs",
-    "build:cjs": "yes | npx esbuild src/plugin.ts --bundle --external:any-date-parser --platform=node --format=cjs --outfile=dist/index.cjs",
+    "build:cjs": "yes | npx esbuild src/plugin.ts --bundle --external:any-date-parser --platform=node --format=cjs --outfile=dist/index.cjs --footer:js=\"module.exports = module.exports.default;\"",
     "coverage": "./scripts/test.sh run --coverage",
     "view-coverage": "open ./coverage/lcov-report/index.html"
   },

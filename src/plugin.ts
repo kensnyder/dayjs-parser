@@ -6,7 +6,7 @@ import type { ConfigType, PluginFunc } from 'dayjs';
  * @param options  Configuration options (currently none)
  * @param dayjsClass  The Dayjs class
  */
-const plugin: PluginFunc<undefined> = (options, dayjsClass) => {
+const plugin: PluginFunc<undefined> = (options: ConfigType, dayjsClass) => {
   // @ts-ignore - parse is an undocumented method
   const oldParse = dayjsClass.prototype.parse;
   // @ts-ignore - parse is an undocumented method

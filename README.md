@@ -10,7 +10,7 @@
 The most comprehensive and accurate date parser for Node and browsers. It uses
 `Intl` to provide parsing support for all installed locales. This plugin 
 connects the capabilities of 
-[any-date-parser](https://npmjs.com/package/dany-date-parser) to
+[any-date-parser](https://npmjs.com/package/any-date-parser) to
 [dayjs](https://day.js.org).
 
 It allows passing every imaginable date format to the `dayjs()` function. Most 
@@ -52,7 +52,7 @@ Register as a regular dayjs plugin
 import dayjs from 'dayjs';
 import dayjsParser from 'dayjs-parser';
 
-dayjs.extend(parserPlugin);
+dayjs.extend(dayjsParser);
 
 const date1 = dayjs('Wed Jan 19 2022 17:52:46');
 const date2 = dayjs('in 2 weeks');
@@ -72,7 +72,7 @@ Locales are supported by first setting the global locale:
 import dayjs from 'dayjs';
 import dayjsParser from 'dayjs-parser';
 
-dayjs.extend(parserPlugin);
+dayjs.extend(dayjsParser);
 dayjs.locale('fr');
 
 const date = dayjs('15 septembre 2015');

@@ -1,11 +1,11 @@
 # dayjs-parser
 
-[![NPM Link](https://img.shields.io/npm/v/dayjs-parser?v=1.0.2)](https://npmjs.com/package/dayjs-parser)
-[![Build Status](https://github.com/kensnyder/dayjs-parser/actions/workflows/workflow.yml/badge.svg?v=1.0.2)](https://github.com/kensnyder/dayjs-parser/actions)
-[![Code Coverage](https://codecov.io/gh/kensnyder/dayjs-parser/branch/main/graph/badge.svg?v=1.0.2)](https://codecov.io/gh/kensnyder/dayjs-parser)
-[![Language: TypeScript](https://badgen.net/static/language/TS?v=1.0.2)](https://github.com/search?q=repo:kensnyder/dayjs-parser++language:TypeScript&type=code)
-![Tree shakeable](https://badgen.net/static/tree%20shakeable/yes/green?v=1.0.2)
-[![ISC License](https://badgen.net/github/license/kensnyder/dayjs-parser?v=1.0.2)](https://opensource.org/licenses/ISC)
+[![NPM Link](https://img.shields.io/npm/v/dayjs-parser?v=1.0.3)](https://npmjs.com/package/dayjs-parser)
+[![Build Status](https://github.com/kensnyder/dayjs-parser/actions/workflows/workflow.yml/badge.svg?v=1.0.3)](https://github.com/kensnyder/dayjs-parser/actions)
+[![Code Coverage](https://codecov.io/gh/kensnyder/dayjs-parser/branch/main/graph/badge.svg?v=1.0.3)](https://codecov.io/gh/kensnyder/dayjs-parser)
+[![Language: TypeScript](https://badgen.net/static/language/TS?v=1.0.3)](https://github.com/search?q=repo:kensnyder/dayjs-parser++language:TypeScript&type=code)
+![Tree shakeable](https://badgen.net/static/tree%20shakeable/yes/green?v=1.0.3)
+[![ISC License](https://badgen.net/github/license/kensnyder/dayjs-parser?v=1.0.3)](https://opensource.org/licenses/ISC)
 
 The most comprehensive and accurate date parser for Node and browsers. It uses
 `Intl` to provide parsing support for all installed locales. This plugin 

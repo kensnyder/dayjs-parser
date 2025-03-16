@@ -1,5 +1,9 @@
 ## Change Log
 
+### v1.0.3 on 2025-03-16
+
+- Fix typos in README.md
+
 ### v1.0.2 on 2025-03-15
 
 - Updated dependencies

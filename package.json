@@ -1,6 +1,6 @@
 {
   "name": "dayjs-parser",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Date parsing plugin for dayjs",
   "keywords": [
     "dayjs",
@@ -54,21 +54,21 @@
   },
   "homepage": "https://github.com/kensnyder/dayjs-parser#readme",
   "dependencies": {
-    "any-date-parser": "2.0.3"
+    "any-date-parser": "2.2.0"
   },
   "peerDependencies": {
     "dayjs": "1.11.13"
   },
   "devDependencies": {
-    "@types/node": "22.13.10",
-    "@vitest/coverage-v8": "3.0.8",
+    "@types/node": "22.15.21",
+    "@vitest/coverage-v8": "3.1.4",
     "dayjs": "1.11.13",
     "eslint": "8.16.0",
-    "luxon": "3.5.0",
+    "luxon": "3.6.1",
     "prettier": "3.5.3",
     "prettier-plugin-organize-imports": "4.1.0",
     "rimraf": "6.0.1",
-    "typescript": "5.8.2",
-    "vitest": "3.0.8"
+    "typescript": "5.8.3",
+    "vitest": "3.1.4"
   }
 }

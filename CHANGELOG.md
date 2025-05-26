@@ -1,5 +1,9 @@
 ## Change Log
 
+### v1.0.4 on 2025-05-26
+
+- Update `any-date-parser` to 2.2.0 
+
 ### v1.0.3 on 2025-03-16
 
 - Fix typos in README.md

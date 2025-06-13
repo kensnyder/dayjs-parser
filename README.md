@@ -1,11 +1,11 @@
 # dayjs-parser
 
-[![NPM Link](https://img.shields.io/npm/v/dayjs-parser?v=1.0.4)](https://npmjs.com/package/dayjs-parser)
-[![Build Status](https://github.com/kensnyder/dayjs-parser/actions/workflows/workflow.yml/badge.svg?v=1.0.4)](https://github.com/kensnyder/dayjs-parser/actions)
-[![Code Coverage](https://codecov.io/gh/kensnyder/dayjs-parser/branch/main/graph/badge.svg?v=1.0.4)](https://codecov.io/gh/kensnyder/dayjs-parser)
-[![Language: TypeScript](https://badgen.net/static/language/TS?v=1.0.4)](https://github.com/search?q=repo:kensnyder/dayjs-parser++language:TypeScript&type=code)
-![Tree shakeable](https://badgen.net/static/tree%20shakeable/yes/green?v=1.0.4)
-[![ISC License](https://badgen.net/github/license/kensnyder/dayjs-parser?v=1.0.4)](https://opensource.org/licenses/ISC)
+[![NPM Link](https://img.shields.io/npm/v/dayjs-parser?v=1.0.5)](https://npmjs.com/package/dayjs-parser)
+[![Build Status](https://github.com/kensnyder/dayjs-parser/actions/workflows/workflow.yml/badge.svg?v=1.0.5)](https://github.com/kensnyder/dayjs-parser/actions)
+[![Code Coverage](https://codecov.io/gh/kensnyder/dayjs-parser/branch/main/graph/badge.svg?v=1.0.5)](https://codecov.io/gh/kensnyder/dayjs-parser)
+[![Language: TypeScript](https://badgen.net/static/language/TS?v=1.0.5)](https://github.com/search?q=repo:kensnyder/dayjs-parser++language:TypeScript&type=code)
+![Tree shakeable](https://badgen.net/static/tree%20shakeable/yes/green?v=1.0.5)
+[![ISC License](https://badgen.net/github/license/kensnyder/dayjs-parser?v=1.0.5)](https://opensource.org/licenses/ISC)
 
 The most comprehensive and accurate date parser for Node and browsers. It uses
 `Intl` to provide parsing support for all installed locales. This plugin 
@@ -85,9 +85,9 @@ See the [Dayjs docs on locales](https://day.js.org/docs/en/i18n/i18n)
 ## Sister Packages
 
 - Standalone Parser:
-  [any-date-parser](http://npmjs.com/packages/any-date-parser)
+  [any-date-parser](http://npmjs.com/package/any-date-parser)
 - Luxon: [luxon-parser](http://npmjs.com/package/luxon-parser)
-- Moment: [moment-parseplus](http://npmjs.com/package/moment-parseplus)
+- Moment: [moment-parseplus](http://npmjs.com/package/moment-parseplus) \[deprecated]
 
 ## Unit Testing
 

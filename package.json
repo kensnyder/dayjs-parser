@@ -1,6 +1,6 @@
 {
   "name": "dayjs-parser",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "Date parsing plugin for dayjs",
   "keywords": [
     "dayjs",
@@ -54,13 +54,13 @@
   },
   "homepage": "https://github.com/kensnyder/dayjs-parser#readme",
   "dependencies": {
-    "any-date-parser": "2.2.1"
+    "any-date-parser": "2.2.2"
   },
   "peerDependencies": {
     "dayjs": "1.11.13"
   },
   "devDependencies": {
-    "@types/node": "24.0.1",
+    "@types/node": "24.0.3",
     "@vitest/coverage-v8": "3.2.3",
     "dayjs": "1.11.13",
     "eslint": "8.16.0",

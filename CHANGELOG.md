@@ -1,5 +1,10 @@
 ## Change Log
 
+### v1.0.7 on 2026-08-25
+
+- Update `any-date-parser` to 2.2.4
+- Update deps
+
 ### v1.0.6 on 2025-06-16
 
 - Update `any-date-parser` to 2.2.2
